@@ -1,7 +1,193 @@
 html,body {
   background-color: #fff45e;
+  font-family: "Poppins";
+  max-width: 100%;
+  margin: 0;
+}
+
+#cover-video {
+  object-fit: cover;
+  position: fixed;
+}
+
+.bg::before {
+  content: '';
+position: fixed;
+background: rgba(0, 0, 0, 0.5);
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+object-fit: cover;
+z-index: 1;
+}
+
+.lyrics-body {
+    padding-left: 50px;
+    z-index: 5;
+    position: relative;
+    top:100vh;
+}
+
+.bg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.bg-text {
+  position: absolute;
+  text-align: center;
+  /*bottom: 25%;*/
+  color: white;
+  z-index: 2;
+  top:50px;
+}
+
+
+
+
+#artist {
+  font-size: .75rem;
 }
 
 audio {
 display: none;
+}
+
+#bio {
+  width: 50%;
+  line-height: 140%;
+  text-align: left;
+  position: relative;
+  left: 25%;
+  top: 25px;
+}
+
+#section02 a {
+  padding-top: 60px;
+}
+#section02 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 46px;
+  height: 46px;
+  margin-left: -23px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+#section02 a span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: '';
+  width: 16px;
+  height: 16px;
+  margin: -12px 0 0 -8px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+
+
+p1 {
+  font-size: .75rem;
+  font-weight: 500;
+  display: block;
+  color: #FFF788;
+}
+
+#toc {
+  position: fixed;
+  left: 75%;
+  bottom:15%;
+}
+
+#toc-title {
+  font-size: 1.5rem;
+}
+
+#toc td {
+  padding: 5px 10px ;
+  color:white;
+}
+
+#toc td:hover {
+  background-color: #FFF788;
+
+}
+
+#toc td:hover a {
+    color:black;
+}
+
+#toc a{
+  color: white;
+}
+
+h2 {
+  padding-right: 15px;
+}
+
+mark {
+  background-color: white;
+  padding: 10px;
+  color: #fff45e:
+}
+
+mark a {
+  color: #fff45e;
+}
+
+#chorus-1, #chorus-2, #chorus-3, #chorus-4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  display: inline-block;
+  padding-right: 50px;
+  position: relative;
+  float: left;
+
+}
+
+h3:hover {
+  -webkit-animation:spin 2s ease-in-out infinite;
+-moz-animation:spin 2s ease-in-out infinite;
+animation:spin 2s ease-in-out infinite;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+h3 a {
+  text-decoration: none;
+
+}
+
+p {
+  font-family: "Poppins";
+  line-height: 1.5;
+  display: inline-block;
+  z-index: 5;
+  color: #FFF788;
+}
+
+p:hover {
+  text-decoration: overline;
+  color: white;
 }
