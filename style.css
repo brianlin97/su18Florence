@@ -1,0 +1,475 @@
+
+
+
+body, html {
+  /*background: linear-gradient(160deg,#D6B15F, #23445D, #141E30);*/
+  background: linear-gradient(160deg,#D6B15F 22%, #23445D 45%, #141E30 );
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  height: 290%;
+  font-family: "zenon";
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+
+}
+
+.col-md-10 {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.col-md-5 {
+  padding-left:  2.5px;
+  padding-right:  .5px;
+}
+
+
+img {
+  max-width: 100%;
+}
+
+p {
+  font-family:  "ratio";
+  font-weight: 400;
+  letter-spacing: .5px;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
+
+.bg::before {
+
+  content: '';
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: 1;
+  max-height: 100vh;
+}
+
+.bg {
+  overflow-y: hidden;
+
+}
+
+.navbar {
+  position: relative;
+  z-index: 100;
+  top: 20px;
+}
+
+.navbar-inner {
+    background:transparent;
+
+}
+
+.navbar-nav {
+  float: right;
+  padding-right: 50px;
+}
+
+.nav-item {
+  padding: 10px 10px;
+}
+.nav-item a {
+  font-family: "ratio";
+  color: white;
+}
+
+.nav-item a:hover {
+  color: #FFECD0;
+  text-decoration:line-through;
+}
+
+
+
+
+.navbar-expand-lg {
+    background:transparent;
+}
+
+.navbar-light {
+  background: transparent;
+}
+
+#cover-video {
+  position: absolute;
+  width: 100%;
+  bottom: -5px;
+}
+
+#subheader {
+  font-family: "ratio";
+  font-size: 2rem;
+  font-weight: 900;
+  color: #FFECD0;
+  position: absolute;
+  top: 35%;
+  left: 5%;
+  z-index: 10;
+}
+
+#title {
+  font-family: "zenon";
+  font-size: 9.5rem;
+  font-weight: 900;
+  position: absolute;
+  left: 5%;
+  top: 37.5%;
+  color: #FFECD0;
+}
+
+.header-container {
+  position: relative;
+  top: 210vh;
+  left: 26%;
+}
+
+.intro-question {
+  position: relative;
+  width: 100%;
+  bottom: 100vh;
+}
+
+#intro-img-row {
+  position: absolute;
+  top: 190vh;
+  left: 16.5%;
+}
+
+#intro-img-row img {
+  padding-bottom: 20px;
+  object-fit: cover;
+}
+
+#header {
+  font-size: 2.5rem;
+  line-height: 40px;
+  font-family: "zenon";
+  color: #FFDA9D;
+  padding-bottom: 20px;
+}
+
+#header-p {
+  color: white;
+  font-size: 1.5rem;
+  line-height: 22px;
+}
+
+.faded-text {
+  font-family: "zenon";
+  font-size: 10rem;
+  font-weight: 800;
+  opacity: .35;
+  position: absolute;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+}
+
+#question-faded {
+  top: 150vh;
+  left: -10vw;
+  color: #FFDA9D;
+}
+
+#proposal-faded {
+  top: 290vh;
+  left: -10vw;
+  color: #DDB26C;
+}
+
+#carousel-top{
+  position: absolute;
+  top:95vh;
+}
+
+.carousel img{
+  max-width: 100%;
+}
+
+#proposal-intro {
+  position: relative;
+  top: 10vh;
+}
+
+#proposal-intro img {
+  position: relative;
+  left: 5%;
+  margin-top: 100px;
+  width: 90%;
+}
+
+#proposal-intro-p1{
+  position: relative;
+  margin-top: 50px;
+  font-size: 1.5rem;
+}
+
+#proposal-intro-p2{
+  position: relative;
+  top: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#chair-outline {
+  position: relative;
+  padding: 100px 0px;
+  left: 7.5vw;
+  top: 100vh;
+
+}
+#chair-outline img {
+  max-width: 50vw;
+}
+
+.chair-outline {
+  position: absolute;
+  width: 100%;
+  left: 3vw;
+  margin-top: 35vh;
+}
+
+.chair-outline img {
+}
+
+.chair-outline-before {
+  position: absolute;
+  width: 40vw;
+  left: 13vw;
+  bottom: 33vh;
+}
+
+.chair-outline #chair-bottom {
+  left: 12.5vw;
+  position: absolute;
+  width: 35vw;
+
+}
+
+.chair-outline #chair-left-rail {
+  position: absolute;
+  width: 4vw;
+  left: 19vw;
+  top: 24vh;
+}
+
+.chair-outline #chair-right-rail {
+  position: absolute;
+  width: 4vw;
+  left: 37.5vw;
+  top: 23.75vh;
+}
+
+
+.chair-outline #chair-left {
+  position: absolute;
+  width: 7.5vw;
+  left: 13.5vw;
+  top: 4vw;
+}
+
+.chair-outline #chair-right {
+  position: absolute;
+  width: 7.5vw;
+  left:39vw;
+  top: 4vw;
+}
+
+
+.chair-outline #chair-left-rope {
+  position: absolute;
+  width: 30vw;
+  left: 17vw;
+  bottom: -28vh;
+}
+
+.chair-outline #chair-right-rope {
+  position: absolute;
+  width: 30vw;
+  left: 13vw;
+  bottom: -28vh;
+}
+
+.chair-outline #chair-left-bracket {
+  position: absolute;
+  width: 4vw;
+  bottom: -4.85vh;
+  left: 12.5vw;
+}
+
+
+.chair-outline #chair-right-bracket {
+  position: absolute;
+  width: 4vw;
+  bottom: -5vh;
+  left: 43.5vw;
+}
+
+
+
+.chair-outline #chair-left-tarp {
+  position: absolute;
+  width: 12vw;
+  left: 10vw;
+  bottom: -8vh;
+}
+
+.chair-outline #chair-right-tarp {
+  position: absolute;
+  width: 11vw;
+  bottom: -8vh;
+  left: 38.5vw;
+}
+
+.chair-container {
+  width: 100%;
+  height: 100%;
+
+}
+
+.chair-captions #caption-title {
+  position: absolute;
+  font-family: "zenon";
+  font-weight: 700;
+  font-size: 6rem;
+  margin-top: 55vh;
+  left: -12vw;
+  color: #FFDA9D;
+}
+
+.chair-captions #caption-subtitle {
+  position: absolute;
+  font-family: "ratio";
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-top: 67vh;
+  left: -12vw;
+  color: #DDB26C;
+}
+
+.chair-captions #caption-small-text {
+  width: 27%;
+  position: absolute;
+  font-family: "ratio";
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-top: 75vh;
+  left:-12vw;
+  line-height: 20px;
+  color: #DDB26C;
+}
+
+.chair-captions p{
+  position: absolute;
+  color: white;
+  font-weight: 300;
+  font-size: 1.35rem;
+}
+
+.chair-captions #tarp {
+  left: 65%;
+  margin-top: 35vh;
+}
+
+.chair-captions #rope {
+  left: 65%;
+  margin-top: 50vh;
+}
+
+.chair-captions #bracket {
+  left: 65%;
+  margin-top: 60vh;
+}
+
+.chair-captions #chair {
+  left: 65%;
+  margin-top: 75vh;
+}
+
+.chair-captions #rail {
+  left: 65%;
+  margin-top: 105vh;
+}
+
+.chair-captions #bottom {
+  left: 65%;
+  margin-top: 115vh;
+}
+
+.chair-secondary-images {
+  position: relative;
+  right:5%;
+  top: 160vh;
+}
+
+.chair-secondary-images img {
+  padding: 25px;
+}
+
+.chair-secondary-images #chair-full {
+  position: relative;
+  width: 95%;
+  bottom: 15px;
+}
+
+#sketch-2 {
+  position: relative;
+  width: 86%;
+  right: 5%;
+
+}
+
+
+#mockups-carousel {
+  position: relative;
+  width: 75%;
+  top: 180vh;
+  left:3vw;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100vw;
+  object-fit: contain;
+}
+
+.item img{
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.carousel-caption {
+  /*background: rgba(0, 0, 0, 0.25);
+  width: */
+}
+
+.fade-in {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 3s;
+
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
